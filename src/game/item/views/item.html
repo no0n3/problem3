@@ -1,0 +1,12 @@
+<div data-ng-mouseenter="$ctrl.hover()" data-ng-mouseleave="$ctrl.leave()" data-ng-click="$ctrl.openGame()">
+    {{ $ctrl.game.game_name }}
+    <div class="game-thumb-container">
+        <img ng-src="{{ $ctrl.game.thumb }}" alt="{{ $ctrl.game.game_name }}">
+        <div class="play-container" data-ng-show="$ctrl.show">
+            <div class="play-item">
+                <div><i class="fa fa-play fa-2x" aria-hidden="true"></i></div>
+                <span>Play Now</span>
+            </div>
+        </div>
+    </div>
+</div>

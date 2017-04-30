@@ -1,0 +1,14 @@
+<div>
+    <ul class="menu">
+        <li class="menu-item"
+            data-ng-class="{'selected-menu-item' : category === selectedMenu}"
+            data-ng-click="setCategoryGames(category)"
+            data-ng-repeat="category in categories">
+            {{ category }} games
+        </li>
+    </ul>
+
+    <div class="flex-container" id="games-cont">
+        <game-item class="flex-item" data-ng-repeat="game in games" game="game"></game-item>
+    </div>
+</div>

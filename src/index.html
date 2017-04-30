@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- build:css assets/css/styles.css -->
+        <link rel="stylesheet" href="assets/css/app.css" type='text/css'>
+        <link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.min.css" type='text/css'>
+        <!-- endbuild -->
+    </head>
+    <body data-ng-app="problem_3">
+        <div>
+            <div class="container">
+                <ng-view></ng-view>
+            </div>
+        </div>
+
+        <!-- build:assets assets.min.js -->
+        <!-- ASSETS -->
+        <script src="../bower_components/angular/angular.min.js"></script>
+        <script src="../bower_components/angular-route/angular-route.min.js"></script>
+        <script src="../bower_components/angular-touch/angular-touch.min.js"></script>
+        <!-- endbuild -->
+        <!-- build:js app.min.js -->
+        <!-- MODULES -->
+        <script src="app.js"></script>
+        <script src="app.routes.js"></script>
+
+        <!-- / -->
+        <!-- CONTROLLERS -->
+        <script src="game/game.controller.js"></script>
+        <!-- / -->
+        <script src="game/item/item.component.js"></script>
+        <!-- SERVICES -->
+        <script src="game/services/game.js"></script>
+        <!-- DIRECTIVES -->
+        <!-- inject:js -->
+        <!-- endinject -->
+        <!-- endbuild -->
+    </body>
+</html>
